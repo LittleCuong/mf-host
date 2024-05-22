@@ -8,7 +8,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:3000/",
+    // publicPath: "http://localhost:3000/",
+    publicPath: "https://main.d36ham560eqwh1.amplifyapp.com/"
   },
 
   resolve: {
@@ -56,7 +57,7 @@ module.exports = (_, argv) => ({
       remotes: {
         // layout: "layouts@http://localhost:3002/remoteEntry.js",
         // pages: "pages@http://localhost:3003/remoteEntry.js"
-        layout: "layout@https://main.doxxr994hjh.amplifyapp.com/",
+        layout: "layouts@https://main.doxxr994hjh.amplifyapp.com/",
         pages: "pages@https://main.d2y7ztxbftcgjk.amplifyapp.com/"
       },
       exposes: {},
