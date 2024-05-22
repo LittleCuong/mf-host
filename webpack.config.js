@@ -57,8 +57,8 @@ module.exports = (_, argv) => ({
       remotes: {
         // layout: "layouts@http://localhost:3002/remoteEntry.js",
         // pages: "pages@http://localhost:3003/remoteEntry.js"
-        layout: "layouts@https://main.doxxr994hjh.amplifyapp.com/",
-        pages: "pages@https://main.d2y7ztxbftcgjk.amplifyapp.com/"
+        layout: "layouts@https://main.doxxr994hjh.amplifyapp.com/remoteEntry.js",
+        pages: "pages@https://main.d2y7ztxbftcgjk.amplifyapp.com/remoteEntry.js"
       },
       exposes: {},
       // shared: {
