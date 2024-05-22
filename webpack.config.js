@@ -61,17 +61,17 @@ module.exports = (_, argv) => ({
         pages: "pages@https://main.d2y7ztxbftcgjk.amplifyapp.com/remoteEntry.js"
       },
       exposes: {},
-      // shared: {
-      //   ...deps,
-      //   react: {
-      //     singleton: true,
-      //     requiredVersion: deps.react,
-      //   },
-      //   "react-dom": {
-      //     singleton: true,
-      //     requiredVersion: deps["react-dom"],
-      //   },
-      // },
+      shared: {
+        ...deps,
+        // react: {
+        //   singleton: true,
+        //   requiredVersion: deps.react,
+        // },
+        // "react-dom": {
+        //   singleton: true,
+        //   requiredVersion: deps["react-dom"],
+        // },
+      },
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
