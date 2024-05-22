@@ -79,6 +79,6 @@ module.exports = (_, argv) => ({
     new Dotenv(),
   ],
   optimization: {
-    runtimeChunk: 'single'
+    // runtimeChunk: 'single'
   }
 });
