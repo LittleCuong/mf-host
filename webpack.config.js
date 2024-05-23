@@ -2,7 +2,6 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
-const { HotModuleReplacementPlugin } = require("webpack");
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -44,6 +43,7 @@ module.exports = (_, argv) => ({
           loader: "babel-loader",
         },
       },
+      { test: /\.json$/, type: 'json' },
     ],
   },
 
